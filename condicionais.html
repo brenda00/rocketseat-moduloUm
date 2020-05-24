@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>Curso de JavaScript</title>
+    </head>
+<body>
+
+    <script>
+        /*Definindo função*/
+       function retornaSexo(sexo) {
+           
+           //opções de input para o sexo M ou F
+           //opções de retorno Masculino ou Feminino
+
+           /*OBS: quando se usa == ele verifica se os valores são iguais, 
+                  mas utilizando === é verificado valor e tipo da variavel */
+
+           if(sexo === "M"){
+               return "Masculino";
+
+           } else if(sexo === "F"){
+               return "Feminino";
+
+           }else{
+               return "Outros";
+           }
+               
+       }
+
+        //Utilizado quando a verificação é em uma variavel muitas vezes.
+       function retornaSexoSwhitch(sexoSwitch){
+           switch(sexoSwitch){
+               case "M":
+                    return "Masculino";
+               case "F":
+                    return "Feminino";
+                default:
+                    return "Outros";
+           }
+
+       }
+
+       /*Chamada da função*/
+       var resultado = retornaSexo("ushuishsuis");
+       var retornoSexoSwitch = retornaSexoSwhitch("F");
+
+       /*mostrando o valor do retorno da chamada de função no console*/
+       console.log(resultado, retornoSexoSwitch);
+    </script>
+</body>    
+</html>
